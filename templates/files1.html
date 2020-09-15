@@ -1,0 +1,103 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 1;
+  
+  overflow: block;
+  background-color: white;
+}
+
+li {
+  float: bottom;
+}
+
+li a {
+  display: block;
+  color: #000066;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #80ccff;
+}
+
+#container {
+  margin: 50px auto;
+  width: 125px;
+}
+
+a.s3d  {
+  clear: both;
+  opacity: .8;
+  
+  border-radius:3px;
+  
+  box-shadow:0 4px 5px rgba(0,0,0,.3);
+  
+  display: inline-block !important;
+  font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
+  height: 26px;
+  margin: 0 0 10px;
+  padding: 0 10px 11px;
+  position: relative;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255,255,255,.35);
+  width: 125px;
+  
+  transition: width 0.1s ease-in-out, opacity 0.1s ease-in-out, margin-left 0.1s ease-in-out, transform .3s ease-out;
+}
+
+a.s3d:hover {
+  opacity: 1;
+  width: 160px;
+  margin-left: -10px;
+}
+
+a.s3d:active { transform: translateX(200px); }
+a. {{ file }}{
+  background: blue;
+  background: linear-gradient(#F98CB6, #F75F94);
+  border-top: 1px solid #fbbad3;
+  color: rgba(74,36,49,.9);
+}
+
+a.{{ file }}:active {
+  background: #F75F94;
+  background: linear-gradient(#F75F94, #F98CB6);
+}
+body {
+  background: #00B4DB;
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  height: 150vh;
+  }
+  </style>
+</body>
+<section>
+<div class="container p-5">
+    <!-- For demo purpose -->
+    <div class="row mb-5 text-center text-white">
+      <div class="col-lg-10 mx-auto">
+        <center><img src="https://tng3.tce.edu/favicon.png?v=2" align="left"></img>
+  <h3 align><font color="white"><font size="6"><i>THIAGARAJAR COLLEGE OF ENGINEERING</I></H3>
+  <h6><i> <sub>~where quality and ethics matter</sub></i></h6>
+  <h4 align="center"><i>PROJECT DOCUMENTATION</i></h2></center></font></font>
+      </div>
+    </div>
+  
+  <ul>
+    {% for file in files %}
+    <li>
+<a  href="{{ file }}" >{{ file }}</a>
+</li>
+    {% endfor %}
+</ul>
+  </div>
+</section>
+</html>

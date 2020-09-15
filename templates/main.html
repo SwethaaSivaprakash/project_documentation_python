@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  html,body{
+background-image: url('https://image.freepik.com/free-photo/school-stationery-isolated-blue-background_24837-182.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+
+.btn {
+  background-color: #000066;
+  border: none;
+  color: white;
+  padding: 20px 24px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+ 
+  background-color: #000066;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+</head>
+<body>
+
+<div class="header" id="myHeader">
+  <img src="https://tng3.tce.edu/favicon.png?v=2" align="left"></img>
+  <h3><i>THIAGARAJAR COLLEGE OF ENGINEERING</I></H3>
+  <h6><i> <sub>~where quality and ethics matter</sub></i></h6>
+  <h4 align="center"><i>PROJECT DOCUMENTATION</i></h2>
+</div>
+<br><br><br>
+<br><br>
+<div>
+<form method="post" action="/facultylogin" align="center">
+<button class="btn" type="submit" onclick="faculty_login()" name="Faculty"><i class="fa fa-home"></i> FACULTY</button>
+</form>
+<br>
+<form method="post" action="/studentlogin" align="center">
+<button class="btn"><i class="fa fa-home" type="submit" onclick="student_login()" name="Student"></i> STUDENT</button>
+</form>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

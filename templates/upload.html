@@ -1,0 +1,82 @@
+<html>
+<body>
+  <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+body {
+  background: #00B4DB;
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+  background: linear-gradient(to right, #0083B0, #00B4DB);
+  height: 150vh;
+  
+  
+}
+img {
+padding:15px;
+}
+.center {
+  margin: auto;
+  width: 40%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+background: white;
+}
+
+</style>
+</body>
+
+<section>
+  <div class="container p-5">
+    <!-- For demo purpose -->
+    <div class="row mb-5 text-center text-white">
+      <div class="col-lg-10 mx-auto">
+        <center><img src="https://tng3.tce.edu/favicon.png?v=2" align="left"></img>
+  <h3 align><font color="white"><font size="6"><i>THIAGARAJAR COLLEGE OF ENGINEERING</I></H3>
+  <h6><i> <sub>~where quality and ethics matter</sub></i></h6>
+  <h4 align="center"><i>PROJECT DOCUMENTATION</i></h2></center></font></font>
+      </div>
+    </div>
+    <!-- End -->
+
+
+    <div class="center">
+      <div class="col-lg-5 mx-auto" >
+        <div class="p-5 bg-white shadow rounded-lg" ><img src="https://res.cloudinary.com/mhmd/image/upload/v1557366994/img_epm3iz.png" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill">
+
+         
+
+          <h3 class="text-center mb-4 text-muted">
+            Select file(s) to upload
+          </h3>
+
+          
+
+          
+
+          
+<form method="post" action="/upload1" enctype="multipart/form-data">
+    <dl>
+    <p>
+      <input type="file" name="files[]" multiple="true" autocomplete="off" required>
+    </p>
+    </dl>
+    <p>
+  <button class="button" autofocus type="submit" onclick="upload()" name="Iot" >Iot</button><br><br>
+  <button class="button" autofocus type="submit" onclick="upload()" name="cloud_computing" >cloud_computing</button><br><br>    <button  class="button" autofocus type="submit" onclick="upload()" name="mobile_technologies" >mobile_technologies</button><br><br>
+  <button class="button" autofocus type="submit" onclick="upload()" name="machine_learning" >machine_learning</button><br><br>
+    <button class="button" autofocus type="submit" onclick="upload()" name="data_science" >data_science</button><br><br>
+    <button class="button" autofocus type="submit" onclick="upload()" name="others" >others</button><br><br>
+  </p>
+</form>
+          <!-- End -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</html>
